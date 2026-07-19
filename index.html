@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bonhomme+Richard&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+    <title>Happy Birthday Bindu ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loader">
+    <div class="loader-heart">❤️</div>
+    <h2>Preparing your surprise...</h2>
+</div>
+<header class="header">
+
+    <div class="logo">
+        ❤️ Sharath & Bindu ❤️
+    </div>
+
+</header>
+<div class="progress">
+
+    <div class="progress-bar"></div>
+
+</div>
+<section id="home" class="page active">
+<div class="background"></div>
+
+<div id="hearts"></div>
+
+<div class="glass">
+
+<h2>Happy 25th Birthday</h2>
+
+<h1>Dear Bindu ❤️</h1>
+
+<p id="typing"></p>
+
+<button id="startBtn">
+    Open My Surprise ❤️
+</button>
+
+<audio id="bgMusic" loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" class="music-btn">
+🎵
+</button>
+
+</div>
+
+</section>
+
+<section id="story" class="page">
+  <h1 class="title">Our Beautiful Journey ❤️</h1>
+
+    <div class="timeline">
+
+    <div class="card left reveal">
+
+    <img src="images/photo1.jpg">
+
+    <div class="content">
+
+    <h2>The Day We Met</h2>
+
+    <p>
+    The beginning of the most beautiful chapter of my life.
+    </p>
+
+    </div>
+
+    </div>
+
+    <div class="card right reveal">
+
+    <img src="images/photo2.jpg">
+
+    <div class="content">
+
+    <h2>First Selfie 📸</h2>
+
+    <p>
+    One photo...
+    Thousands of memories...
+    </p>
+
+    </div>
+
+    </div>
+
+    <div class="card left reveal">
+
+    <img src="images/photo3.jpg">
+
+    <div class="content">
+
+    <h2>Our Adventures 🌍</h2>
+
+    <p>
+    Every journey with you became unforgettable.
+    </p>
+
+    </div>
+
+    </div>
+
+    <div class="card right reveal">
+
+    <img src="images/photo4.jpg">
+
+    <div class="content">
+
+    <h2>Forever ❤️</h2>
+
+    <p>
+    Thank you for making every day brighter.
+    Happy 25th Birthday, Bindu.
+    </p>
+
+    </div>
+
+    </div>
+
+    </div>
+
+<div class="next">
+
+<button onclick="showPage('gallery')">
+    Continue Our Journey ➜
+</button>
+
+</div>  
+
+</section>
+
+<section id="gallery" class="page">
+<h1>Our Beautiful Memories ❤️</h1>
+
+<div class="gallery">
+
+<img src="images/photo1.jpg">
+<img src="images/photo2.jpg">
+<img src="images/photo3.jpg">
+<img src="images/photo4.jpg">
+<img src="images/photo5.jpg">
+<img src="images/photo6.jpg">
+<img src="images/photo7.jpg">
+<img src="images/photo8.jpg">
+
+</div>
+
+<div id="lightbox">
+
+<span id="close">&times;</span>
+
+<span id="prev">&#10094;</span>
+
+<img id="preview">
+
+<span id="next">&#10095;</span>
+
+</div>
+
+<div class="center">
+
+<button onclick="showPage('countdown')">
+    Next Surprise ❤️
+</button>
+
+
+</div>
+</section>
+
+<section id="countdown" class="page">
+<div class="overlay">
+
+<h1>🎂 Bindu's Birthday 🎂</h1>
+
+<p class="subtitle">
+Every second brings us closer to celebrating you ❤️
+</p>
+
+<div class="timer">
+
+<div class="box">
+<h2 id="days">0</h2>
+<span>Days</span>
+</div>
+
+<div class="box">
+<h2 id="hours">0</h2>
+<span>Hours</span>
+</div>
+
+<div class="box">
+<h2 id="minutes">0</h2>
+<span>Minutes</span>
+</div>
+
+<div class="box">
+<h2 id="seconds">0</h2>
+<span>Seconds</span>
+</div>
+
+</div>
+
+<button onclick="showPage('gifts')">
+    Continue ❤️
+</button>
+
+</div>  
+</section>
+
+<section id="gifts" class="page">
+<h1>🎁 25 Little Surprises for You ❤️</h1>
+
+<div class="gift-grid" id="giftGrid"></div>
+
+<div class="next">
+
+<button onclick="showPage('reasons')">
+    Next Surprise ❤️
+</button>
+
+</div>
+</section>
+
+<section id="reasons" class="page">
+<h1>💖 25 Reasons Why I Love You 💖</h1>
+
+<div class="grid" id="grid"></div>
+
+<div class="next">
+
+<button onclick="showPage('letter')">
+Read My Letter ❤️
+</button>
+
+</div>
+
+</section>
+
+<section id="letter" class="page">
+
+<div class="letter">
+
+<h1>💌 Dear Bindu ❤️</h1>
+
+<p id="message"></p>
+
+<div class="signature">
+
+Forever Yours,<br>
+
+❤️ Sharath
+
+</div>
+
+<button onclick="showPage('final')">
+One Last Surprise 🎂
+</button>
+
+</div>
+</section>
+
+<section id="final" class="page">
+<div id="confetti"></div>
+
+<h1>🎂 Happy 25th Birthday Bindu ❤️</h1>
+
+<div class="cake">
+    <div class="candles">
+        🕯️ 🕯️ 🕯️ 🕯️ 🕯️
+    </div>
+
+    🎂
+</div>
+
+<p>
+
+Happy Birthday to the most amazing person in my life.
+
+Thank you for every smile,
+every hug,
+every memory,
+and every moment.
+
+You make my world brighter every single day.
+
+I hope this small surprise reminds you how deeply you are loved.
+
+❤️
+
+</p>
+
+<button id="celebrate">
+Exit 🎉
+</button>
+
+</section>
+
+<script src="js/app.js"></script>
+<script src="js/common.js"></script>
+<script src="js/story.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/gifts.js"></script>
+<script src="js/reasons.js"></script>
+<script src="js/letter.js"></script>
+<script src="js/final.js"></script>
+
+</body>
+</html>
